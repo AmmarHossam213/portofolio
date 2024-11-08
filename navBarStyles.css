@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 73, 95, 0.734);
+  border-radius: 20px;
+}
+
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: all 200ms ease-in-out;
+}
+
+header a::before {
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  bottom: -5px;
+  transform-origin: left;
+  transition: all 200ms ease-in-out;
+}
+
+header a:hover::before {
+  width: 100%;
+}
+
+header a:hover {
+  color: #eeeeeea5;
+}
+
+header a.active {
+  color: #eeeeeea5;
+}
+header a.active::before {
+  width: 100%;
+}

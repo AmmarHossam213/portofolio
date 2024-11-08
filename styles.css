@@ -1,0 +1,43 @@
+body {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  background-color: #eee;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  margin: 3rem;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.project__img {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.project__btn {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.project__btn:hover {
+  background-color: rgba(0, 73, 95, 0.734);
+  color: white;
+}
